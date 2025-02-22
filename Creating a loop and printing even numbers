@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Numbers from 1 to 100</title>
+    <script>
+        function printEvenNumbers() {
+            var result = ''; // To store the even numbers
+
+            // Loop from 1 to 100
+            for (var i = 1; i <= 100; i++) {
+                if (i % 2 === 0) { // Checking if the number is even
+                    result += i + '<br>';
+                }
+            }
+            document.getElementById("evenNumbers").innerHTML = result;
+        }
+    </script>
+</head>
+<body>
+    <h1>Even Numbers from 1 to 100</h1>
+    <button onclick="printEvenNumbers()">Show Even Numbers</button>
+    <div id="evenNumbers"></div>
+</body>
+</html>
